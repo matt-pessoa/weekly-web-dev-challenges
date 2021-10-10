@@ -1,2 +1,6 @@
-# weekly-web-dev-challenges
-My solutions to the weekly Web Dev challenges by Scrimba.
+# Weekly Web Dev Challenges
+
+This week:
+[ ] [Word Count]()
+
+Past challenges:

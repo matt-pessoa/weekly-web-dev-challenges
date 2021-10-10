@@ -1,6 +1,6 @@
 # Weekly Web Dev Challenges
 
-This week:
-- [ ] [Word Count]()
+### This week:
+- [ ] [Word Count 🧮]()
 
-Past challenges:
+### Past challenges:

@@ -4,11 +4,13 @@ const characterCount = document.getElementById('character-count');
 const longestWord = document.getElementById('longest-word');
 
 function getLongestWord(arr) {
-    const sortedArray = arr.sort(function(a,b) {
-        return b.length - a.length;
-    })
-    
-    return sortedArray[0];
+  const sortedArray = arr.sort(function (a, b) {
+    return b.length - a.length;
+  });
+
+  const word = sortedArray[0];
+
+  return word;
 }
 
 function wordCounter() {
@@ -16,8 +18,8 @@ function wordCounter() {
     .split(' ')
     .filter((word) => word.length > 0);
   count.textContent = arrayOfWords.length;
-  
-  if (arrayOfWords.length > 0) {   
+
+  if (arrayOfWords.length > 0) {
     longestWord.textContent = getLongestWord(arrayOfWords);
   } else {
     longestWord.textContent = '';
@@ -25,15 +27,15 @@ function wordCounter() {
 }
 
 function characterCounter() {
-    characterCount.textContent = textArea.value.length;
+  characterCount.textContent = textArea.value.length;
 }
 
-function load() {    
-    textArea.addEventListener('input', wordCounter);
-    textArea.addEventListener('input', characterCounter);
+function load() {
+  textArea.addEventListener('input', wordCounter);
+  textArea.addEventListener('input', characterCounter);
 
-    wordCounter();
-    characterCounter();
+  wordCounter();
+  characterCounter();
 }
 
 load();

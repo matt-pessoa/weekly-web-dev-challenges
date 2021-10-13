@@ -6,5 +6,5 @@
 ### Stretch goals:
 
 - [x] display the longest word
-- [ ] add spell check
+- [x] add spell check
 - [x] add character count

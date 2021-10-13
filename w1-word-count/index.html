@@ -1,28 +1,22 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="container">
-      <textarea
-        id="txtid"
-        name="txtname"
-        rows="4"
-        cols="50"
-        maxlength="200"
-      ></textarea>
-      <p>Word count: <span id="count"></span></p>
-      <p>Character count: <span id="character-count"></span></p>
-      <p>
-        Longest word: <b><span id="longest-word"></span></b>
-      </p>
-    </div>
-    <script src="index.js"></script>
-  </body>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <section id="text-area">
+                <textarea id="txtid" name="txtname" rows="4" cols="50" maxlength="200" spellcheck="true"></textarea>
+            </section>
+            <section id="words">
+                <p>Word count: <b><span id="count"></span></b></p>
+                <p>Character count: <b><span id="character-count"></span></b></p>
+                <p>Longest word: <b><span id="longest-word"></span></b><p>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
 </html>
